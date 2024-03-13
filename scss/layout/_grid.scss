@@ -1,0 +1,11 @@
+// ===== GRID SETTINGS =====
+.row {
+  margin-top: 123rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30rem;
+  @include mobile {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}

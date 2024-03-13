@@ -1,0 +1,61 @@
+.footer {
+  margin-top: 130rem;
+  padding-top: 106rem;
+  padding-bottom: 85rem;
+  background: var(--bg-color-second);
+}
+.footer-group {
+  display: flex;
+  justify-content: start;
+  gap: 107rem;
+  @include tablet {
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40rem;
+  }
+}
+.footer-info {
+
+  &__desc {
+    margin-top: 26rem;
+    max-width: 431rem;
+  }
+}
+.footer-contact {
+  &__title {
+    margin-bottom: 9rem;
+  }
+
+  &__a {
+    display: inline-block;
+    font-family: var(--ff);
+    margin-bottom: 37rem;
+    transition: var(--transition);
+    &:hover {
+      transform: scale(1.05);
+    }
+    &:nth-child(3n + 0) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__telephone {
+    display: flex;
+    align-items: center;
+    gap: 16rem;
+  }
+}
+.footer-hour {
+  &__title {
+    margin-bottom: 17rem;
+  }
+
+  &__desc {
+    margin-bottom: 15rem;
+    &:nth-child(7) {
+      margin-bottom: 0;
+    }
+  }
+}

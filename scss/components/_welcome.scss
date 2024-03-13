@@ -1,0 +1,14 @@
+.welcome {
+  margin-top: 54rem;
+  margin-bottom: 111rem;
+}
+
+.owl-carousel .owl-dots {
+  @include mobile {
+    bottom: 12rem;
+  }
+}
+
+.owl-carousel .owl-item img {
+  border-radius: 12rem;
+}

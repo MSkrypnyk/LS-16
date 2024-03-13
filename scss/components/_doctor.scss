@@ -1,0 +1,62 @@
+.doctor {
+  padding-bottom: 130rem;
+}
+
+.doctor-item {
+  display: inline-block;
+  padding: 44rem 38rem 33rem 39rem;
+  border-radius: 20rem;
+  background: var(--bg-color-second);
+  transition: var(--transition);
+  &:hover {
+    background: var(--bg-color);
+    transform: scale(1.03);
+  }
+  &:hover &__name,
+  &:hover &__profession {
+    color: var(--white);
+  }
+
+  &:hover &__appointment {
+    color: var(--bg-color);
+  }
+
+  &:hover &__appointment {
+    background-color: var(--white);
+  }
+
+  &__info {
+    display: flex;
+    gap: 13rem;
+    align-items: center;
+    margin-bottom: 25rem;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 20rem;
+    color: var(--c-primary);
+    margin-bottom: 3rem;
+  }
+
+  &__profession {
+    font-weight: 400;
+    font-size: 16rem;
+    color: var(--c-second);
+  }
+
+  &__desc {
+    @extend .doctor-item__profession;
+    margin-bottom: 28rem;
+    max-width: 293rem;
+  }
+
+  &__appointment {
+    font-weight: 600;
+    font-size: 20rem;
+    color: var(--bg-color-second);
+    background: var(--bg-color);
+    border-radius: var(--border-radius);
+    padding: 11rem 49rem;
+  }
+}

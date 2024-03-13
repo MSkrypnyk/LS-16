@@ -1,0 +1,64 @@
+html {
+  font-size: 1px;
+  @include tablet {
+    font-size: 0.9px;
+  }
+  @include mobile {
+    font-size: 0.8px;
+  }
+}
+
+body {
+  font-family: var(--ff);
+  font-size: 16rem;
+}
+
+.container {
+  max-width: 1210rem;
+  padding: 0 20rem;
+  margin-inline: auto;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  font-family: var(--ff);
+  border-radius: var(--border-radius);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 48rem;
+  color: var(--c-primary);
+  margin-bottom: 70rem;
+  transition: var(--transition);
+  &:hover {
+    transform: scale(1.03);
+    text-shadow: 1rem 1rem 2rem var(--c-primary);
+  }
+}
+
+.desc {
+  font-weight: 400;
+  font-size: 16rem;
+  color: var(--c-primary);
+  max-width: 837rem;
+  margin-inline: auto;
+}
+
+.footer-title {
+  font-weight: 600;
+  font-size: 20rem;
+  color: var(--c-primary);
+}
+
+.footer-desc {
+  font-weight: 400;
+  font-size: 16rem;
+  color: var(--c-primary);
+}

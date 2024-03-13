@@ -1,0 +1,18 @@
+// breakpoints
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+
+:root {
+  --ff: "Work Sans", sans-serif;
+  --transition: 0.2s all ease-in-out;
+  --bg-color: #8842f0;
+  --bg-color-second: #f9f1fe;
+  --c-primary: #262626;
+  --c-second: #575757;
+  --c-placeholder: #6c6c6c;
+  --white: #fff;
+  --black: #000;
+  --border-radius: 50rem;
+}

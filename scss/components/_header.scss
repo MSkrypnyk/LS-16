@@ -1,0 +1,129 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5rem;
+  padding-top: 47rem;
+  @include tablet {
+    gap: 10rem;
+    padding-top: 20rem;
+  }
+
+  &__logo {
+    font-family: var(--ff);
+    font-weight: 600;
+    font-size: 24rem;
+    color: var(--c-primary);
+    transition: var(--transition);
+    &:hover {
+      transform: scale(1.03);
+      text-shadow: 1rem 1rem 2rem var(--c-primary);
+    }
+  }
+
+  &__ul {
+    display: flex;
+    align-items: center;
+    gap: 24rem;
+    z-index: 2;
+
+    @include tablet {
+      position: fixed;
+      width: 70%;
+      height: 100%;
+      flex-direction: column;
+      left: 0;
+      top: 0;
+      justify-content: center;
+      background: var(--c-primary);
+      transform: translateX(-120%);
+      transition: var(--transition);
+    }
+
+    &._active {
+      transform: translateX(0);
+    }
+
+    .icon-close {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      color: var(--white);
+    }
+  }
+
+  &__a {
+    font-family: var(--ff);
+    font-weight: 400;
+    font-size: 16rem;
+    color: var(--black);
+    position: relative;
+    transition: var(--transition);
+
+    @include tablet {
+      color: var(--white);
+    }
+    &:hover,
+    &.is-active {
+      color: var(--bg-color);
+      font-weight: 600;
+    }
+
+    &:hover::before,
+    &.is-active::before {
+      transform: scale(1);
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: calc(100% - 8rem);
+      height: 1rem;
+      position: absolute;
+      bottom: -6rem;
+      left: 4rem;
+      border-radius: 1rem;
+      background: var(--bg-color);
+      transform: scale(0);
+      transition: var(--transition);
+    }
+  }
+}
+
+.header-form {
+  border-radius: var(--border-radius);
+  background: var(--black);
+  padding: 9rem 19rem;
+  padding-right: 15rem;
+  gap: 10rem;
+  display: flex;
+  max-width: 278rem;
+  &__input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-family: var(--ff);
+    font-weight: 400;
+    font-size: 14rem;
+    color: var(--white);
+
+    &::placeholder {
+      color: var(--c-placeholder);
+    }
+  }
+
+  &__icon path {
+    fill: var(--white);
+  }
+}
+
+.icon-menu,
+.icon-close {
+  cursor: pointer;
+  display: none;
+
+  @include tablet {
+    display: inline-block;
+  }
+}
