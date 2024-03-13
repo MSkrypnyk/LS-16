@@ -261,8 +261,12 @@ body {
 .header-form__input::placeholder {
   color: var(--c-placeholder);
 }
-.header-form__icon path {
-  fill: var(--white);
+.header-form__btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background: var(--black);
+  color: var(--white);
 }
 
 .icon-menu,

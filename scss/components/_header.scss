@@ -113,8 +113,10 @@
     }
   }
 
-  &__icon path {
-    fill: var(--white);
+  &__btn {
+    display: inline-flex;
+    background: var(--black);
+    color: var(--white);
   }
 }
 
