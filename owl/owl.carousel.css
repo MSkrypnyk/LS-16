@@ -32,7 +32,7 @@
 .owl-carousel .owl-stage-outer {
 	position: relative;
 	overflow: hidden;
-	border-radius: 30px;
+	border-radius: 30rem;
 	/* fix for flashing background */
 	-webkit-transform: translate3d(0px, 0px, 0px);
 }
@@ -49,7 +49,7 @@
 	position: relative;
 	min-height: 1px;
 	float: left;
-	border-radius: 30px;
+	border-radius: 30rem;
 	-webkit-backface-visibility: hidden;
 	-webkit-tap-highlight-color: transparent;
 	-webkit-touch-callout: none;
@@ -57,7 +57,7 @@
 .owl-carousel .owl-item img {
 	display: block;
 	width: 100%;
-	border-radius: 30px;
+	border-radius: 30rem;
 }
 .owl-carousel .owl-nav.disabled,
 .owl-carousel .owl-dots.disabled {

@@ -1,5 +1,9 @@
 function navToggle() {
-  document.getElementById("headerUl").classList.toggle("_active");
+  const iconClose = document.getElementById("iconClose");
+  const headerUL = document.getElementById("headerUl");
+
+  headerUL.classList.toggle("_active");
+  iconClose.classList.toggle("_active");
 }
 
 $(document).ready(function () {
